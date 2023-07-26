@@ -39,9 +39,9 @@ jobs:
           switches: -avzr --delete
           path: ./web
           remote_path: /var/app
-          remote_host: ${{ secrets.HOSTNAME }}
+          remote_host: ${{ secrets.HOSTNAME1 }}
           remote_user: ${{ secrets.REMOTE_USER }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY1 }}
       
       - uses: JimCronqvist/action-ssh@7737f1192ddd8376686e9d6354dea44592c942bf
         name: Execute SSH commmands on remote server
@@ -82,9 +82,9 @@ jobs:
         switches: -avzr --delete
         path: ./web
         remote_path: /var/app
-        remote_host: ${{ secrets.HOSTNAME }}
+        remote_host: ${{ secrets.HOSTNAME1 }}
         remote_user: ${{ secrets.REMOTE_USER }}
-        remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        remote_key: ${{ secrets.SSH_PRIVATE_KEY1 }}
     
     - uses: JimCronqvist/action-ssh@7737f1192ddd8376686e9d6354dea44592c942bf
       name: Execute SSH commmands on remote server
